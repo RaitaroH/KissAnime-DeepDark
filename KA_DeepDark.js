@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          KA-DeepDark
+// @name          KissAnime DeepDark
 // @namespace     https://github.com/
 // @author        RaitaroH
 // @homepage      https://github.com/RaitaroH/KissAnime-DeepDark
