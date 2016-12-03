@@ -12,7 +12,7 @@
 // @include       http://*.kissanime.to/*
 // @include       https://*.kissanime.to/*
 // @run-at        document-start
-// @version       0.20151106074303
+// @version       1.1
 // ==/UserScript==
 (function() {var css = [
 	"#head h1 {",
