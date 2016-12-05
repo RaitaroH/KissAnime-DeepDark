@@ -6,6 +6,8 @@ and also https://userstyles.org/styles/119994/kiss-anime-sexy-red-dark-theme and
 
 You can install from here https://greasyfork.org/en/scripts/25337-kissanime-deepdark
 
+Themes as Stylish styles here https://userstyles.org/users/377182
+
 # Screenshots
 ![alt tag](https://i.imgur.com/hL2Yb8e.png)
 ![alt tag](https://i.imgur.com/RkZQTi3.png)
