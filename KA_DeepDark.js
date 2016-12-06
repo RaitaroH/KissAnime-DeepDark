@@ -3,6 +3,7 @@
 // @namespace     https://github.com/
 // @author        RaitaroH
 // @homepage      https://github.com/RaitaroH/KissAnime-DeepDark
+// @icon          https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/KADD-icon.png
 // @include       http://kissanime.com/*
 // @include       https://kissanime.com/*
 // @include       http://*.kissanime.com/*
