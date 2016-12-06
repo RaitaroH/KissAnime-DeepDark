@@ -13,7 +13,8 @@
 // @include       http://*.kissanime.to/*
 // @include       https://*.kissanime.to/*
 // @run-at        document-start
-// @version       1.1
+// @version       1.2
+// Changelog 1.2 added icon
 // ==/UserScript==
 (function() {var css = [
 	"#head h1 {",
