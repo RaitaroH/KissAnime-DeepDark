@@ -9,31 +9,43 @@
 // @include       http://*.kissanime.ru/*
 // @include       https://*.kissanime.ru/*
 // @run-at        document-start
-// @version       1.3.5
+// @version       1.3.6
+// Changelog  1.3.6 fixed search not showing,display show comments button
 // Changelog  1.3.5 fixed arrows for next and previous buttons
+// Changelog  1.3.4 add removal (because if you can show adds I can hide them)
 // Changelog  1.3.3 removed more stuff
 // Changelog  1.3.2 small touches
 // Changelog  1.3.1 some touches to make it look good in the new domain. Also I will leave the comments as they are because is too much of a pain to theme that.
 // Changelog  1.3.0 added kissanime.ru, also YES IT IS BACK!
 // Changelog  1.2 added icon
 // @description Watch anime in a bright room with a dark theme. May the dark show your way. (KissAnime dark theme)
+// @grant       GM_getValue
+// @grant       GM_setValue
 // ==/UserScript==
 (function() {var css = [
-"/*1.3.5*/",
+	"@namespace url(http://www.w3.org/1999/xhtml);",
+	"/*1.3.6*/",
 	"    /*Removing crap section*/",
-	"    #divAds,#divFloatRight,#divFloatLeft,div.divCloseBut,#adsIfrme1,#adsIfrme2,#adsIfrme3,#adsIfrme4,#adsIfrme5,#adsIfrme9,#adsIfrme10,#adsIfrme7,#adsIfrme11,#adsIfrme8,#adsIfrme6,.barContent > div:nth-child(1) > div:nth-child(4),#containerRoot > div:nth-child(7),#containerRoot > div:nth-child(9),#containerRoot > div:nth-child(15),div.rightBox:nth-child(7),#navsubbar,#spanBookmark,#imgSearch,div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > img:nth-child(1),.arrow-general,#formSearch > div:nth-child(4) > a:nth-child(1) > img:nth-child(1),#adsIfrme3,div.bigBarContainer:nth-child(7) ,#topHolderBox,#divReload,div.rightBox:nth-child(5) > div:nth-child(2),div.rightBox:nth-child(5) > div:nth-child(1),div.rightBox:nth-child(5),#rightside > div:nth-child(4), .barContent > div:nth-child(1) > div:nth-child(11),div.clear2:nth-child(9), .barContent > div:nth-child(1) > div:nth-child(2), div.clear2:nth-child(10), div.clear2:nth-child(8),  #containerRoot > div:nth-child(17),#containerRoot > div:nth-child(20),div.clear:nth-child(21),.clsTempMSg > div:nth-child(3),div.clear:nth-child(17),.barContent > div:nth-child(1) > div:nth-child(23),#divDownload,#divFileName,#footer,div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6),div.clear2:nth-child(5),.barContent > div:nth-child(1) > div:nth-child(3),#containerRoot > div:nth-child(12),div.clear2:nth-child(13),#containerRoot > div:nth-child(14),#containerRoot > div:nth-child(14),div.clear2:nth-child(15),div.clear2:nth-child(19),div.clear:nth-child(22),#containerRoot > div:nth-child(23),.clsTempMSg,.clsTempMSg > div:nth-child(1),.clsTempMSg > div:nth-child(2),div.clear2:nth-child(20),div.clear2:nth-child(27),#dv_pp_S54RjmGQ5Zno,#BB_SK_548813069,#formSearch > div:nth-child(3),#divAds2,body > div:nth-child(6) {",
+	"    #divAds,#divFloatRight,#divFloatLeft,div.divCloseBut,#adsIfrme1,#adsIfrme2,#adsIfrme3,#adsIfrme4,#adsIfrme5,#adsIfrme9,#adsIfrme10,#adsIfrme7,#adsIfrme11,#adsIfrme8,#adsIfrme6,.barContent > div:nth-child(1) > div:nth-child(4),#containerRoot > div:nth-child(7),#containerRoot > div:nth-child(9),#containerRoot > div:nth-child(15),div.rightBox:nth-child(7),#navsubbar,#spanBookmark,#imgSearch,div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > img:nth-child(1),.arrow-general,#formSearch > div:nth-child(4) > a:nth-child(1) > img:nth-child(1),#adsIfrme3,div.bigBarContainer:nth-child(7) ,#topHolderBox,#divReload,div.rightBox:nth-child(5) > div:nth-child(2),div.rightBox:nth-child(5) > div:nth-child(1),div.rightBox:nth-child(5),#rightside > div:nth-child(4), .barContent > div:nth-child(1) > div:nth-child(11),div.clear2:nth-child(9), .barContent > div:nth-child(1) > div:nth-child(2), div.clear2:nth-child(10), div.clear2:nth-child(8),#containerRoot > div:nth-child(20),div.clear:nth-child(21),.clsTempMSg > div:nth-child(3),div.clear:nth-child(17),.barContent > div:nth-child(1) > div:nth-child(23),#divDownload,#divFileName,#footer,div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6),div.clear2:nth-child(5),.barContent > div:nth-child(1) > div:nth-child(3),#containerRoot > div:nth-child(12),div.clear2:nth-child(13),#containerRoot > div:nth-child(14),#containerRoot > div:nth-child(14),div.clear2:nth-child(15),div.clear2:nth-child(19),div.clear:nth-child(22),#containerRoot > div:nth-child(23),.clsTempMSg,.clsTempMSg > div:nth-child(1),.clsTempMSg > div:nth-child(2),div.clear2:nth-child(20),div.clear2:nth-child(27),#dv_pp_S54RjmGQ5Zno,#BB_SK_548813069,#formSearch > div:nth-child(3),#divAds2,body > div:nth-child(6),div.clear:nth-child(15),div.clear2:nth-child(17),div.clear:nth-child(19) {",
 	"    display: none !important;",
 	"}",
-
 	"    /*Change logo section*/",
 	"    #head h1 a.logo {",
 	"    padding-bottom: 10px !important;",
 	"    width: 600px !important;",
-	"    margin-top: 24px !important;",
+	"    margin-top: 20px !important;",
 	"    margin-left: 20px !important;",
 	"    z-index: 9999 !important;",
 	"}",
-
+	"    #headnav {",
+	"    background: transparent !important;",
+	"    margin: 0px !important;",
+	"}",
+	"    #head h1 {",
+	"    background: url(http://i.imgur.com/jnt6rO6.png) !important;",
+	"    width: 80% !important;",
+	"    margin: -10px 10px 0px 0px !important;",
+	"}",
 	"    /*Background section*/",
 	"    #navcontainer a:link, #navcontainer a:visited, #navcontainer a:hover, #navcontainer a:visited {",
 	"    background: transparent !important;",
@@ -45,15 +57,6 @@
 	"    .tooltip{",
 	"    background: #222 !important;",
 	"}",
-	"    #headnav {",
-	"    background: transparent !important;",
-	"    margin: 0px !important;",
-	"}",
-	"    #head h1 {",
-	"    background: url(http://i.imgur.com/jnt6rO6.png) !important;",
-	"    width: 80% !important;",
-	"    margin: -70px 10px 0px 0px !important;",
-	"}",
 	"    /*Changing images for next/prev buttons*/",
 	"    a.prev,a.prev:hover {",
 	"    background: url(https://i.imgur.com/V3W8cnw.png) !important;",
@@ -61,28 +64,26 @@
 	"    a.next,a.next:hover {",
 	"    background: url(https://i.imgur.com/D3MhIGP.png) !important;",
 	"}",
-
-	"/*Css triangles for next and previous arrows. Fixed the problem of arrow on the first episode*/",	
-	"    #btnNext{",
-	"    width: 0;", 
-	"    height: 0;", 
-	"    border-top: 10px solid transparent;",
-	"    border-bottom: 10px solid transparent;",
-	"    border-left: 10px solid white;",
+	"",
+	"  #btnNext {",
+	"  width: 0; ",
+	"  height: 0; ",
+	"  border-top: 10px solid transparent;",
+	"  border-bottom: 10px solid transparent;",
+	"  border-left: 10px solid white;",
 	"}",
-	"    #btnPrevious{",
-	"    width: 0;", 
-	"    height: 0;", 
-	"    border-top: 10px solid transparent;",
-	"    border-bottom: 10px solid transparent;", 
-	"    border-right:10px solid white;", 
+	"  #btnPrevious {",
+	"  width: 0; ",
+	"  height: 0; ",
+	"  border-top: 10px solid transparent;",
+	"  border-bottom: 10px solid transparent; ",
+	"  border-right:10px solid white;          ",
 	"}",
-
+	"",
 	"/*Border section*/",
 	"    .banner img:hover, div.items img:hover,#subcontent div a img:hover{",
 	"    border-color: #00adee !important;",
 	"}",
-
 	"/*Colors section*/",
 	"    .post-content .post-message p,.post-content .post-message p:last-child,.dark .load-more__button,a, .nextEpisodeCountDown, .details,div.bigBarContainer:nth-child(1) > div:nth-child(2) > div:nth-child(2) > p:nth-child(6), div.bigBarContainer:nth-child(1) > div:nth-child(2) > div:nth-child(2) > p:nth-child(7), #navcontainer li a#currentTab:hover {",
 	"    color: #fff !important;",
@@ -90,7 +91,7 @@
 	"    .comment__header .author a,.publisher-anchor-color a,.title, div.items a, .bigChar, .bigChar:visited, #nextEpisodeCountDown {",
 	"    color: rgba(0,173,238,.9)  !important; ",
 	"}",
-	"    div.bigBarContainer:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {",
+	"    #divComments > div > div:nth-child(2),div.bigBarContainer:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {",
 	"    color: #00adee !important; ",
 	"}",
 	"/*Hover*/",
@@ -104,16 +105,23 @@
 	"    .textDark {",
 	"    color: #808080 !important;",
 	"}",
-
 	"/*Buttons*/",
-	"    .dark .load-more__button,.load-more__button{",
+	"    .specialButton,.dark .load-more__button,.load-more__button{",
 	"    background: linear-gradient(rgb(50,50,50), rgb(40,40,40)) !important;",
 	"    border-color: rgb(0,0,0) !important;",
 	"}",
-	"    .dark .load-more__button:hover,.load-more__button:hover{",
+	"    .specialButton:hover,.dark .load-more__button:hover,.load-more__button:hover{",
 	"    background: linear-gradient(rgb(70,70,70), rgb(60,60,60)) !important;",
 	"    transition: .1s ease-in !important;",
 	"    color: #00adee !important;",
+	"}",
+	"/*The show comments button*/",
+	"    .specialButton{",
+	"    box-shadow: none !important;",
+	"    -webkit-box-shadow: none !important;                                 ",
+	"}",
+	"#btnShowComments{",
+	"    text-shadow: none !important;",
 	"}",
 	"    .dark .post-content .post-menu > li a{",
 	"    filter: invert(100%);",
@@ -127,18 +135,29 @@
 	"    position: relative !important;",
 	"    margin-bottom: 25px !important;",
 	"}",
-
 	"/* Serch section */",
 	"    #search {",
-	"    /*position: absolute !important;*/",
-	"    top: 121px !important;",
-	"    right: -60px !important;",
+	"    position: absolute !important;",
+	"    top: 132px !important;",
+	"    right: 90px !important;",
+	"    visibility: visible !important;",
+	"    z-index: 999 !important;",
+	"    }",
+	"",
+	"    #formSearch > div:nth-child(4) {",
+	"    position: absolute !important;",
+	"    top: 5px !important;",
+	"    right: -126px !important;",
 	"    visibility: visible !important;",
 	"    z-index: 999 !important;",
 	"    }",
 	"    #keyword {",
 	"    width: 150px !important;",
 	"}",
+	"    #result_box a span{",
+	"	color: #00adee !important;",
+	"}",
+	"/*",
 	"    #formSearch > div > a {",
 	"    position: absolute !important;",
 	"    color: #FFF !important;",
@@ -149,6 +168,7 @@
 	"    background-color: transparent !important;",
 	"    transition: all 0.3s ease-in-out 0s !important;",
 	"}",
+	"*/",
 	"    input.text:focus {",
 	"    width: 99% !important;",
 	"    transition: all 0.3s ease-in-out 0s !important;",
@@ -174,7 +194,6 @@
 	"    #result_box a {",
 	"    position: static !important;",
 	"}",
-
 	"/*More stuff I used from Kissanime red theme (link in the description)*/  ",
 	"    div.clear:nth-child(1) {",
 	"    height: 10px !important;",
@@ -335,10 +354,10 @@ if (typeof GM_addStyle != "undefined") {
 	node.appendChild(document.createTextNode(css));
 	var heads = document.getElementsByTagName("head");
 	if (heads.length > 0) {
-	heads[0].appendChild(node); 
+		heads[0].appendChild(node); 
 	} else {
-	// no head yet, stick it whereever
-	document.documentElement.appendChild(node);
+		// no head yet, stick it whereever
+		document.documentElement.appendChild(node);
 	}
 }
 })();
