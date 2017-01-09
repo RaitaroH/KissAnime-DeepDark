@@ -9,8 +9,8 @@
 // @include       http://*.kissanime.ru/*
 // @include       https://*.kissanime.ru/*
 // @run-at        document-start
-// @version       1.3.4
-// Changelog  1.3.4 add removal (because if you can show adds I can hide them)
+// @version       1.3.5
+// Changelog  1.3.5 fixed arrows for next and previous buttons
 // Changelog  1.3.3 removed more stuff
 // Changelog  1.3.2 small touches
 // Changelog  1.3.1 some touches to make it look good in the new domain. Also I will leave the comments as they are because is too much of a pain to theme that.
@@ -19,7 +19,7 @@
 // @description Watch anime in a bright room with a dark theme. May the dark show your way. (KissAnime dark theme)
 // ==/UserScript==
 (function() {var css = [
-"/*1.3.4*/",
+"/*1.3.5*/",
 	"    /*Removing crap section*/",
 	"    #divAds,#divFloatRight,#divFloatLeft,div.divCloseBut,#adsIfrme1,#adsIfrme2,#adsIfrme3,#adsIfrme4,#adsIfrme5,#adsIfrme9,#adsIfrme10,#adsIfrme7,#adsIfrme11,#adsIfrme8,#adsIfrme6,.barContent > div:nth-child(1) > div:nth-child(4),#containerRoot > div:nth-child(7),#containerRoot > div:nth-child(9),#containerRoot > div:nth-child(15),div.rightBox:nth-child(7),#navsubbar,#spanBookmark,#imgSearch,div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > img:nth-child(1),.arrow-general,#formSearch > div:nth-child(4) > a:nth-child(1) > img:nth-child(1),#adsIfrme3,div.bigBarContainer:nth-child(7) ,#topHolderBox,#divReload,div.rightBox:nth-child(5) > div:nth-child(2),div.rightBox:nth-child(5) > div:nth-child(1),div.rightBox:nth-child(5),#rightside > div:nth-child(4), .barContent > div:nth-child(1) > div:nth-child(11),div.clear2:nth-child(9), .barContent > div:nth-child(1) > div:nth-child(2), div.clear2:nth-child(10), div.clear2:nth-child(8),  #containerRoot > div:nth-child(17),#containerRoot > div:nth-child(20),div.clear:nth-child(21),.clsTempMSg > div:nth-child(3),div.clear:nth-child(17),.barContent > div:nth-child(1) > div:nth-child(23),#divDownload,#divFileName,#footer,div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(5),div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(6),div.clear2:nth-child(5),.barContent > div:nth-child(1) > div:nth-child(3),#containerRoot > div:nth-child(12),div.clear2:nth-child(13),#containerRoot > div:nth-child(14),#containerRoot > div:nth-child(14),div.clear2:nth-child(15),div.clear2:nth-child(19),div.clear:nth-child(22),#containerRoot > div:nth-child(23),.clsTempMSg,.clsTempMSg > div:nth-child(1),.clsTempMSg > div:nth-child(2),div.clear2:nth-child(20),div.clear2:nth-child(27),#dv_pp_S54RjmGQ5Zno,#BB_SK_548813069,#formSearch > div:nth-child(3),#divAds2,body > div:nth-child(6) {",
 	"    display: none !important;",
@@ -61,17 +61,21 @@
 	"    a.next,a.next:hover {",
 	"    background: url(https://i.imgur.com/D3MhIGP.png) !important;",
 	"}",
-	"    .barContent > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:nth-child(1) {",
-	"    background: url(https://i.imgur.com/V3W8cnw.png) 0px -5px repeat-x  !important;",
+
+	"/*Css triangles for next and previous arrows. Fixed the problem of arrow on the first episode*/",	
+	"    #btnNext{",
+	"    width: 0;", 
+	"    height: 0;", 
+	"    border-top: 10px solid transparent;",
+	"    border-bottom: 10px solid transparent;",
+	"    border-left: 10px solid white;",
 	"}",
-	"    .barContent > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:nth-child(2) {",
-	"    background: url(https://i.imgur.com/D3MhIGP.png) 0px -5px repeat-x  !important;",
-	"}",
-	"    #btnPrevious,#btnNext {",
-	"    vertical-align: top !important;",
-	"    width: auto !important;",
-	"    position: relative !important;",
-	"    z-index: -1 !important;",
+	"    #btnPrevious{",
+	"    width: 0;", 
+	"    height: 0;", 
+	"    border-top: 10px solid transparent;",
+	"    border-bottom: 10px solid transparent;", 
+	"    border-right:10px solid white;", 
 	"}",
 
 	"/*Border section*/",
