@@ -9,7 +9,8 @@
 // @include       http://*.kissanime.ru/*
 // @include       https://*.kissanime.ru/*
 // @run-at        document-start
-// @version       1.3.8
+// @version       1.3.9
+// Changelog  1.3.9 transparency for the video controls, also aspect ratio force for the video (by default disabled, if you want it uncomment the code from the video section at the bottom of the code), hover for next/previous on video page
 // Changelog  1.3.8 color picker for usersytles
 // Changelog  1.3.7 border on focus for the search bar, text highlight changed to blue
 // Changelog  1.3.6 fixed search not showing,display show comments button
@@ -25,7 +26,7 @@
 // @grant       GM_setValue
 // ==/UserScript==
 (function() {var css = [
-	"/*1.3.8*/",
+	"/*1.3.9*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
@@ -90,6 +91,12 @@
 	"  border-top: 10px solid transparent;",
 	"  border-bottom: 10px solid transparent; ",
 	"  border-right:10px solid white;          ",
+	"}",
+	"  #btnNext:hover {",
+	"  border-left: 10px solid #00ADEE;",
+	"}",
+	"  #btnPrevious:hover {",
+	"  border-right: 10px solid #00ADEE;",
 	"}",
 	"",
 	"/*Border section*/",
@@ -352,10 +359,23 @@
 	"/*Video*/",
 	"    .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level{",
 	"    background: #00adee !important;",
+	"    opacity: 0.8 !important;",
 	"}",
-	"    .vjs-default-skin .vjs-control-bar{",
-	"    background: #222 !important;",
-	"}"
+	"    .vjs-default-skin .vjs-play-progress:hover, .vjs-default-skin .vjs-volume-level:hover{",
+	"    background: #00adee !important;",
+	"    opacity: 1 !important;",
+	"}",	
+	"/*Transparency*/",
+	"    .vjs-default-skin .vjs-control-bar,.vjs-default-skin .vjs-slider{",
+	"    background: rgba(34, 34, 34,.4) !important;",
+	"}",
+		"  .vjs-default-skin .vjs-slider:hover{",
+	"    background: rgba(34, 34, 34,.7) !important;",
+	"}",
+	"	/*Aspect ratio change*/",
+	"		  .video-js .vjs-tech {",
+	"			/*object-fit: fill;*/",
+	"	}"
 ].join("\n");
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
