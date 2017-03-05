@@ -8,8 +8,13 @@
 // @include       https://kissanime.ru/*
 // @include       http://*.kissanime.ru/*
 // @include       https://*.kissanime.ru/*
+// @include       http://kissmanga.com/*
+// @include       https://kissmanga.com/*
+// @include       http://*.kissmanga.com/*
+// @include       https://*.kissmanga.com/*
 // @run-at        document-start
-// @version       1.3.9
+// @version       1.3.9.1
+// Changelog  1.3.9.1 added kissmanga in the domain list, it won't be supported but it is similar enough with Kissanime so it should be fine
 // Changelog  1.3.9 transparency for the video controls, also aspect ratio force for the video (by default disabled, if you want it uncomment the code from the video section at the bottom of the code), hover for next/previous on video page
 // Changelog  1.3.8 color picker for usersytles
 // Changelog  1.3.7 border on focus for the search bar, text highlight changed to blue
@@ -26,7 +31,7 @@
 // @grant       GM_setValue
 // ==/UserScript==
 (function() {var css = [
-	"/*1.3.9*/",
+	"/*1.3.9.1*/",
 	
 	"	/*Changed text highlight*/",
 	"		  ::selection {",
