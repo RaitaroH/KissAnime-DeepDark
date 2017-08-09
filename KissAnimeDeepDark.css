@@ -4,17 +4,17 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/
 
-/*2.0*/
+/*2.0.1*/
 
 	/*Main color variables*/
 	:root
 	{
 		/*User colors*/
-    	--main-color: /*[[mainColor]]*/;
-    	--main-background: /*[[mainBackground]]*/;
-    	--second-background: /*[[secondBackground]]*/;
-    	--hover-background: /*[[hoverBackground]]*/;
-    	--main-text: /*[[mainText]]*/;
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
 		--dimer-text: /*[[dimerText]]*/;
 		
 		/*DeepDark colors*/
@@ -99,7 +99,7 @@
 	}
   
   
-  /*Changed text highlight*/
+	/*Changed text highlight*/
 	::selection
 	{
 		background: var(--main-color) !important;
@@ -123,15 +123,15 @@
 		color: var(--main-text) !important;		
 	}
   
-  /*Hiding crap*/
-  /*Ads*/
-  #divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #rightside > div:nth-child(5), #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose
-  {
-    display: none !important;
-  }
+	/*Hiding crap*/
+	/*Ads*/
+	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #rightside > div:nth-child(5), #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose
+	{
+		display: none !important;
+	}
   
   
-  /*Change logo section*/
+	/*Change logo section*/
 	#head h1 a.logo {
 		padding-bottom: 10px !important;
 		width: 600px !important;
@@ -146,7 +146,7 @@
 	}
 	#head h1
 	{
-		background: url(http://i.imgur.com/jnt6rO6.png) !important;
+		background: url("https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/logo.png") !important;
 		width: 80% !important;
 		margin: -10px 10px 0px 0px !important;
 	}
@@ -155,10 +155,10 @@
 	/*Login*/
 	#topHolderBox
 	{
-   color: var(--main-text) !important;
-   background: var(--second-background) !important;
+		color: var(--main-text) !important;
+		background: var(--second-background) !important;
 	}
-  #topHolderBox > img:nth-child(1)
+	#topHolderBox > img:nth-child(1)
 	{
 		display: none;
 	}
