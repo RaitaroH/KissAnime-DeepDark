@@ -4,7 +4,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/
 
-/*2.0.1*/
+/*2.0.2*/
 
 	/*Main color variables*/
 	:root
@@ -589,4 +589,13 @@
 		color: var(--main-color) !important;
 	}
 	
+	
+	#nextEpisodeCountDown
+	{
+		color: var(--main-color) !important;
+	}
+	div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div:nth-child(2)
+	{
+		color: var(--main-text) !important;
+	}	
 }
