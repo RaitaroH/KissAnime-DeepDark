@@ -4,7 +4,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/
 
-/*2.0.2*/
+/*2.0.3*/
 
 	/*Main color variables*/
 	:root
@@ -125,7 +125,7 @@
   
 	/*Hiding crap*/
 	/*Ads*/
-	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #rightside > div:nth-child(5), #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose
+	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose
 	{
 		display: none !important;
 	}
