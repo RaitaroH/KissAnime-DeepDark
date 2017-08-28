@@ -640,8 +640,3 @@ if (typeof GM_addStyle != "undefined") {
 	}
 }
 })();
-
-var els = ['t', 'b', 'l', 'r', 'tl', 'tr', 'bl', 'br']
-for(var i in els) {
-  document.getElementById(els[i]).style.display = 'none'
-}
