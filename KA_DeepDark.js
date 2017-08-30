@@ -13,7 +13,17 @@
 // @include       http://*.kissmanga.com/*
 // @include       https://*.kissmanga.com/*
 // @run-at        document-start
-// @version       2.0.0
+// @version       2.0.5
+
+// !!!
+// IMPORTANT NOTE!! THIS THEME HAS MOVED HERE: https://userstyles.org/styles/135955/kissanime-deepdark
+// !!!
+
+// Changelog  2.0.5 removed @namespace
+// Changelog  2.0.4 kissmanga.com added to the domains
+// Changelog  2.0.3 fixed a div not showing because of an add removal
+// Changelog  2.0.2 next episode count down
+// Changelog  2.0.1 changed logo from imgur to github
 // Changelog  2.0.0 remade from scratch to work with my color picking
 // Changelog  1.4 removed a div from the right side,made sure the control (server, quality) are showing
 // Changelog  1.3.9.1 added kissmanga in the domain list, it won't be supported but it is similar enough with Kissanime so it should be fine
@@ -33,10 +43,9 @@
 // @grant       GM_setValue
 // ==/UserScript==
 (function() {var css = [
-"@namespace url(http://www.w3.org/1999/xhtml);",
-	"/*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/",
+"/*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/",
 	"",
-	"/*2.0.0*/",
+	"/*2.0.5*/",
 	"",
 	"	/*Main color variables*/",
 	"	:root",
@@ -45,7 +54,7 @@
 	"		--main-color: #00ADEE;",
 	"		--main-background: #111111;",
 	"		--second-background: #181818;",
-	"		--hover-background: #3A3A3A;",
+	"		--hover-background: #232323;",
 	"		--main-text: #EFF0F1;",
 	"		--dimer-text: #CCCCCC;",
 	"		",
@@ -54,7 +63,7 @@
 	"		--main-color: #00adee;",
 	"		--main-background: #111111;",
 	"		--second-background: #181818; ",
-	"		--hover-background: #3A3A3A;",
+	"		--hover-background: #232323;",
 	"		--main-text: #eff0f1;",
 	"		--dimer-text: #CCCCCC;",
 	"		*/",
@@ -131,7 +140,7 @@
 	"	}",
 	"  ",
 	"  ",
-	"  /*Changed text highlight*/",
+	"	/*Changed text highlight*/",
 	"	::selection",
 	"	{",
 	"		background: var(--main-color) !important;",
@@ -155,15 +164,15 @@
 	"		color: var(--main-text) !important;		",
 	"	}",
 	"  ",
-	"  /*Hiding crap*/",
-	"  /*Ads*/",
-	"  #divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #rightside > div:nth-child(5), #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose",
-	"  {",
-	"    display: none !important;",
-	"  }",
+	"	/*Hiding crap*/",
+	"	/*Ads*/",
+	"	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose",
+	"	{",
+	"		display: none !important;",
+	"	}",
 	"  ",
 	"  ",
-	"  /*Change logo section*/",
+	"	/*Change logo section*/",
 	"	#head h1 a.logo {",
 	"		padding-bottom: 10px !important;",
 	"		width: 600px !important;",
@@ -178,7 +187,7 @@
 	"	}",
 	"	#head h1",
 	"	{",
-	"		background: url(http://i.imgur.com/jnt6rO6.png) !important;",
+	"		background: url(\"https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/logo.png\") !important;",
 	"		width: 80% !important;",
 	"		margin: -10px 10px 0px 0px !important;",
 	"	}",
@@ -187,10 +196,10 @@
 	"	/*Login*/",
 	"	#topHolderBox",
 	"	{",
-	"   color: var(--main-text) !important;",
-	"   background: var(--second-background) !important;",
+	"		color: var(--main-text) !important;",
+	"		background: var(--second-background) !important;",
 	"	}",
-	"  #topHolderBox > img:nth-child(1)",
+	"	#topHolderBox > img:nth-child(1)",
 	"	{",
 	"		display: none;",
 	"	}",
@@ -619,6 +628,16 @@
 	"	#aDropDown > span:nth-child(1) > small:nth-child(2)",
 	"	{",
 	"		color: var(--main-color) !important;",
+	"	}",
+	"	",
+	"	",
+	"	#nextEpisodeCountDown",
+	"	{",
+	"		color: var(--main-color) !important;",
+	"	}",
+	"	div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div:nth-child(2)",
+	"	{",
+	"		color: var(--main-text) !important;",
 	"	}"
 ].join("\n");
 if (typeof GM_addStyle != "undefined") {
