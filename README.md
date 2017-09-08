@@ -33,3 +33,4 @@ The colors are available in the code; different colors can be used.
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/Mint-Y-DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/VertexDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/YoutubeColors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/9animeColors.png)
