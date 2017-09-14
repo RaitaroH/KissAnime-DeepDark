@@ -1,6 +1,6 @@
 # KissAnime-DeepDark
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/KA%20-%20DeepDark.png)
-Watch anime in a bright room with a dark theme. May the dark show your way. (KissAnime dark theme)
+Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (KissAnime dark theme)
 
 This is a dark theme for YouTube inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search). 
 
