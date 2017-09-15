@@ -27,6 +27,7 @@ The colors are available in the code; different colors can be used.
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/DeepDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/DiscordColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/FirefoxDarkColors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/Firefox57DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/Mint-Y-DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/VertexDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/YoutubeColors.png)
