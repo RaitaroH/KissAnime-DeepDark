@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/
 
-/*2.0.7*/
+/*2.0.8*/
 
 	/*Main color variables*/
 	:root
@@ -352,7 +352,7 @@
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-  div.items a:hover, .barContent a:hover
+	div.items a:hover, .barContent a:hover
 	{
 		color: var(--main-color) !important;
 		opacity: 1 !important;
@@ -452,6 +452,11 @@
 	
 	/*Video*/
 	.barContent > div:nth-child(1) > div:nth-child(11), .barContent > div:nth-child(1) > .clear, .barContent > div:nth-child(1) > .clear2, #divBookmark > img:nth-child(1)
+	{
+		display: none !important;
+	}
+	/*This div thing sometiems appears for some people*/
+	div [style*="border-color: #4e4e4e !important; position: relative; margin: 0 0 20px 0;"]
 	{
 		display: none !important;
 	}
