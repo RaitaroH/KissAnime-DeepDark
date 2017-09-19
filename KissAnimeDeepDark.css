@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/
 
-/*2.0.8*/
+/*2.0.9*/
 
 	/*Main color variables*/
 	:root
@@ -455,11 +455,6 @@
 	{
 		display: none !important;
 	}
-	/*This div thing sometiems appears for some people*/
-	div [style*="border-color: #4e4e4e !important; position: relative; margin: 0 0 20px 0;"]
-	{
-		display: none !important;
-	}
 	.specialButton
 	{
 		background: var(--main-color) !important;
@@ -485,6 +480,18 @@
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
+	}
+	/*This div thing sometiems appears for some people*/
+	div [style*="border-color: #4e4e4e !important; position: relative; margin: 0 0 20px 0;"]
+	{
+		display: none !important;
+	}
+	/*Trying to have the control showing*/
+	div [style="font-size: 15px; width: 854px; display: inline-block;"]
+	{
+		display: inline-block !important;
+		opacity: 1 !important;
+		visibility: visible !important;
 	}
 	
 	
@@ -557,7 +564,7 @@
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-  div.pagination ul.pager li a:hover, div.pagination ul.pager li a:active
+	div.pagination ul.pager li a:hover, div.pagination ul.pager li a:active
 	{
 		background: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
