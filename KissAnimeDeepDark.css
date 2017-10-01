@@ -350,6 +350,7 @@
 	}
 	a:visited:hover
 	{
+		color: var(--main-color) !important;
 		opacity: 1 !important;
 	}
 	.arrow-general
