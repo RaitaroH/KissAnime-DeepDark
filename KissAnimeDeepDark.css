@@ -1,7 +1,7 @@
 @-moz-document domain("kissanime.ru"), domain("kissmanga.com") {
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/
-	
+
 /*GNU General Public License v3.0*/
 
 /*2.1.2*/
@@ -16,17 +16,17 @@
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
 		--dimer-text: /*[[dimerText]]*/;
-		
+
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
 		--main-background: #111111;
-		--second-background: #181818; 
+		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
 		--dimer-text: #CCCCCC;
 		*/
-		
+
 		/*KDE colors*/
 		/*
 		--main-color: #3DAEE9;
@@ -36,7 +36,7 @@
 		--main-text: #eff0f1;
 		--dimer-text: #bdc3c7;
 		*/
-				
+
 		/*Vertex Dark colors*/
 		/*
 		--main-color: #4080fb;
@@ -46,7 +46,7 @@
 		--main-text: #F3F3F5;
 		--dimer-text: #AEAFB0;
 		*/
-		
+
 		/*Arc Dark colors*/
 		/*
 		--main-color: #5294E2;
@@ -56,7 +56,7 @@
 		--main-text: #C1C8D1;
 		--dimer-text: #B3BAC5;
 		*/
-		
+
 		/*Firefox Dark colors*/
 		/*
 		--main-color: #5675B9;
@@ -66,7 +66,7 @@
 		--main-text: #E3EEF9;
 		--dimer-text: #989798;
 		*/
-		
+
 		/*Firefox57 Dark colors*/
 		/*
 		--main-color: #4080FB;
@@ -76,7 +76,7 @@
 		--main-text: #F9F9FA;
 		--dimer-text: #D0D0D0;
 		*/
-		
+
 		/*Discord colors*/
 		/*
 		--main-color: #7289DA;
@@ -86,7 +86,7 @@
 		--main-text: #FFFFFF;
 		--dimer-text: #ADA8AA;
 		*/
-		
+
 		/*YouTube dark colors*/
 		/*
 		--main-color: #E52117;
@@ -96,7 +96,7 @@
 		--main-text: #E1E1E1;
 		--dimer-text: #7F7F7F;
 		*/
-		
+
 		/*Mint-Y-Dark colors*/
 		/*
 		--main-color: #9AB87C;
@@ -106,7 +106,7 @@
 		--main-text: #FFFFFF;
 		--dimer-text: #D5DADA;
 		*/
-		
+
 		/*9anime colors*/
 		/*
 		--main-color: #723f8c;
@@ -116,7 +116,7 @@
 		--main-text: #B4B4B4;
 		--dimer-text: #747474;
 		*/
-		
+
 		/*Black and white*/
 		/*
 		--main-color: #ffffff;
@@ -126,7 +126,7 @@
 		--main-text: #b4b4b4;
 		--dimer-text: #828282;
 		*/
-		
+
 		/*Yellow (colors from petrocompletions)*/
 		/*
 		--main-color: #FFC700;
@@ -136,7 +136,7 @@
 		--main-text: #EFF0F1;
 		--dimer-text: #9F9999;
 		*/
-		
+
 		/*Yellow 2*/
 		/*
 		--main-color: #ffc700;
@@ -146,27 +146,27 @@
 		--main-text: #fffdf5;
 		--dimer-text: #fff8e1;
 		*/
-		
+
 		/*Ubuntu grey colors*/
 		/*
 		--main-color: #EF7847;
 		--main-background: #312D2A;
-		--second-background: #3D3C38; 
+		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
 		--dimer-text: #E6E5E3;
 		*/
-		
+
 		/*Ubuntu purple colors*/
 		/*
 		--main-color: #EF7847;
 		--main-background: #2C071A;
-		--second-background: #430B28; 
+		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
 		--dimer-text: #E6E5E3;
 		*/
-		
+
 		/*Orange*/
 		/*
 		--main-color: #ff6905;
@@ -176,7 +176,7 @@
 		--main-text: #fff9f5;
 		--dimer-text: #ffede1;
 		*/
-		
+
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
 		/*
 		--main-color: #EF7D6C;
@@ -187,8 +187,8 @@
 		--dimer-text: #986E3F;
 		*/
 	}
-  
-  
+
+
 	/*Changed text highlight*/
 	::selection
 	{
@@ -200,27 +200,27 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	
+
 	/*Outline for links*/
  	a
  	{
 		outline-color: var(--main-color) !important;
 	}
-  
+
 	html, body
 	{
 		background: var(--main-background) !important;
-		color: var(--main-text) !important;		
+		color: var(--main-text) !important;
 	}
-  
+
 	/*Hiding crap*/
 	/*Ads*/
 	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose, [id*="BB_S"]
 	{
 		display: none !important;
 	}
-  
-  
+
+
 	/*Change logo section*/
 	#head h1 a.logo {
 		padding-bottom: 10px !important;
@@ -240,8 +240,8 @@
 		width: 80% !important;
 		margin: -10px 10px 0px 0px !important;
 	}
-	
-	
+
+
 	/*Login*/
 	#topHolderBox
 	{
@@ -265,8 +265,8 @@
 	{
 		margin: -40px 46px 0px 0px !important;
 	}
-	
-	
+
+
 	/* Serch section */
 	#search input.button, #formSearch > div:nth-child(4) > a:nth-child(1) > img:nth-child(1)
 		{
@@ -338,8 +338,8 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Navbar*/
 	#navbar
 	{
@@ -360,7 +360,7 @@
 	#navcontainer li a#currentTab:hover, #navcontainer a:link:hover, #navcontainer a:visited:hover, #navsubbar
 	{
 		background: var(--hover-background) !important;
-	}	
+	}
 	#navsubbar p a:hover
 	{
 		color: var(--main-color) !important;
@@ -373,7 +373,7 @@
 	{
 		margin-bottom: 0px !important;
 	}
-	
+
 	/*Big recommended anime*/
 	.banner, .barContent, .bigBarContainer
 	{
@@ -383,7 +383,7 @@
 	{
 		color: var(--main-color) !important;
 		opacity: .9;
-	}	
+	}
 	.bigChar:hover, .dotUnder:hover
 	{
 		opacity: 1 !important;
@@ -403,14 +403,14 @@
 	.details a img:hover, div.items img:hover
 	{
 		border-color: var(--main-color) !important;
-	}	
-	
-	
+	}
+
+
 	/*Latest update, anouncements etc*/
 	.barTitle, .rightBox
 	{
 		background: var(--second-background) !important;
-	}	
+	}
 	.barTitle, div.navi, .barContent a
 	{
 		color: var(--main-text) !important;
@@ -447,12 +447,12 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	
-	
+
+
 	/*Next and prev buttons*/
 	a.next, #btnNext {
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		border-top: 10px solid transparent;
 		border-bottom: 10px solid transparent;
 		border-left: 10px solid var(--main-text);
@@ -460,11 +460,11 @@
 	}
 	a.prev, #btnPrevious
 	{
-		width: 0; 
-		height: 0; 
+		width: 0;
+		height: 0;
 		border-top: 10px solid transparent;
-		border-bottom: 10px solid transparent; 
-		border-right:10px solid var(--main-text);    
+		border-bottom: 10px solid transparent;
+		border-right:10px solid var(--main-text);
 		background: transparent !important;
 	}
 	a.next:hover, #btnNext:hover
@@ -475,8 +475,8 @@
 	{
 		border-right: 10px solid var(--main-color);
 	}
-	
-	
+
+
 	/*New and hot and stuff*/
 	#tabmenucontainer a:link
 	{
@@ -489,7 +489,7 @@
 	#tabmenucontainer li a.tabactive:hover, #tabmenucontainer a:link:hover
 	{
 		background: var(--hover-background) !important;
-	}	
+	}
 	#subcontent div a img:hover
 	{
 		border-color: var(--main-color) !important;
@@ -514,13 +514,13 @@
 	#subcontent div div.blue
 	{
 		background: var(--second-background) !important;
-	}	
+	}
 	#subcontent div div
 	{
 		background-color: transparent !important;
 	}
-	
-	
+
+
 	/*Are you human*/
 	#formVerify > div > p > span
 	{
@@ -530,8 +530,8 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	
-	
+
+
 	/*Video*/
 	.barContent > div:nth-child(1) > div:nth-child(11), .barContent > div:nth-child(1) > .clear, .barContent > div:nth-child(1) > .clear2, #divBookmark > img:nth-child(1)
 	{
@@ -575,14 +575,14 @@
 		opacity: 1 !important;
 		visibility: visible !important;
 	}
-	
-	
+
+
 	#footer
 	{
 		background: transparent !important;
 	}
-	
-	
+
+
 	/*Video player*/
 	.vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level
 	{
@@ -614,9 +614,9 @@
 	.vjs-default-skin .vjs-big-play-button:hover
 	{
 		background: var(--main-color) !important;
-	}	
-	
-	
+	}
+
+
 	/*Search results*/
 	.listing tr:hover td
 	{
@@ -655,13 +655,13 @@
 	{
 		filter: grayscale(100%);
 	}
-	
+
 	/*Bookmark*/
 	#spanBookmark > img:nth-child(1)
 	{
 		display: none;
 	}
-	
+
 	/*Comments*/
 	div.bigBarContainer:nth-child(7) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
 	{
@@ -671,9 +671,9 @@
 	{
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
-	}	
-	
-	
+	}
+
+
 	/*User logged in*/
 	#topHolderBox > span:nth-child(2)
 	{
@@ -685,7 +685,7 @@
 		color: var(--main-text) !important;
 		background: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
-	}	
+	}
 	.aButton
 	{
 		background: var(--main-background) !important;
@@ -700,8 +700,8 @@
 	{
 		color: var(--main-color) !important;
 	}
-	
-	
+
+
 	#nextEpisodeCountDown
 	{
 		color: var(--main-color) !important;
@@ -709,5 +709,5 @@
 	div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div:nth-child(2)
 	{
 		color: var(--main-text) !important;
-	}	
+	}
 }
