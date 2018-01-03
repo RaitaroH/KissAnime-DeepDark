@@ -2,7 +2,7 @@
 @name KissAnime DeepDark
 @namespace github.com/RaitaroH/KissAnime-DeepDark
 @homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
-@version 2.1.3
+@version 2.1.4
 @updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
 @description KissAnime dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*2.1.3*/
+/*2.1.4*/
 
 	/*Main color variables*/
 	:root
@@ -407,16 +407,16 @@
 		}
 	#search
 	{
-		position: absolute !important;
-		top: 51px !important;
-		right: 250px !important;
+		position: relative !important;
+		top: 10px !important;
+		right: 60px !important;
 		visibility: visible !important;
 		z-index: 999 !important;
 	}
 	#formSearch > div:nth-child(4)
 	{
-		position: absolute !important;
-		top: 5px !important;
+		position: relative!important;
+		top: -30px !important;
 		right: -126px !important;
 		visibility: visible !important;
 		z-index: 999 !important;
@@ -766,9 +766,18 @@
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.listing tr:hover td > a
+	.listing tr td > a
 	{
 		color: var(--main-color) !important;
+	}
+	.listing tr td > a:visited
+	{
+		color: var(--dimer-text) !important;
+	}
+	.listing tr:hover td > a, .listing tr td > a:visited:hover
+	{
+		color: var(--main-color) !important;
+		filter: brightness(110%);
 	}
 	.listing th, div.pagination ul.pager li.current, div.pagination ul.pager li
 	{
