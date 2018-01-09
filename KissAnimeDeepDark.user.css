@@ -2,7 +2,7 @@
 @name KissAnime DeepDark
 @namespace github.com/RaitaroH/KissAnime-DeepDark
 @homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
-@version 2.1.4
+@version 2.1.5
 @updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
 @description KissAnime dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*2.1.4*/
+/*2.1.5*/
 
 	/*Main color variables*/
 	:root
@@ -371,7 +371,7 @@
 	{
 		background: url("https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/logo.png") !important;
 		width: 80% !important;
-		margin: -10px 10px 0px 0px !important;
+		margin: -100px 10px 0px 0px !important;
 	}
 
 
