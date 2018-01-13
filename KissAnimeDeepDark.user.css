@@ -2,7 +2,7 @@
 @name KissAnime DeepDark
 @namespace github.com/RaitaroH/KissAnime-DeepDark
 @homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
-@version 2.1.5
+@version 2.1.6
 @updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (KissAnime dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*2.1.5*/
+/*2.1.6*/
 
 	/*Main color variables*/
 	:root
@@ -402,9 +402,9 @@
 
 	/* Serch section */
 	#search input.button, #formSearch > div:nth-child(4) > a:nth-child(1) > img:nth-child(1)
-		{
+	{
 		display: none;
-		}
+	}
 	#search
 	{
 		position: relative !important;
@@ -413,11 +413,11 @@
 		visibility: visible !important;
 		z-index: 999 !important;
 	}
-	#formSearch > div:nth-child(4)
+	#search a[href="http://kissanime.ru/AdvanceSearch"]
 	{
 		position: relative!important;
 		top: -30px !important;
-		right: -126px !important;
+		right: -156px !important;
 		visibility: visible !important;
 		z-index: 999 !important;
 		margin-right: 25px !important;
@@ -434,18 +434,13 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-		input.text:focus
-	{
-		width: 99% !important;
-		transition: all 0.3s ease-in-out 0s !important;
-	}
 	input.text, .txtSignUp
 	{
 		margin: 0px !important;
 		color: var(--dimer-text) !important;
 		background: var(--second-background) !important;
 		box-shadow: 0px 0px 10px var(--main-background) !important;
-		transition: all 0.3s ease-in-out 0s !important;
+		transition: none !important;
 		border-color: var(--hover-background) !important;
 	}
 	input.text:focus, input.text:active, input.text:hover, .txtSignUp:hover, .txtSignUp:active, .txtSignUp:focus
@@ -460,7 +455,9 @@
 		background-color: var(--second-background) !important;
 		margin-left: -56px !important;
 		border-radius: 0px !important;
-		box-shadow: 0px 0px 10px var(--main-background) !important;
+		box-shadow: var(--shadow) !important;
+		left: 290px !important;
+		top: 15px !important;
 	}
 	#result_box a
 	{
