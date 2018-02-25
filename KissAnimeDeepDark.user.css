@@ -2,7 +2,7 @@
 @name KissAnime DeepDark
 @namespace github.com/RaitaroH/KissAnime-DeepDark
 @homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
-@version 2.1.6
+@version 2.1.7
 @updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (KissAnime dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*2.1.6*/
+/*2.1.7*/
 
 	/*Main color variables*/
 	:root
@@ -663,9 +663,14 @@
 
 
 	/*Video*/
-	.barContent > div:nth-child(1) > div:nth-child(11), .barContent > div:nth-child(1) > .clear, .barContent > div:nth-child(1) > .clear2, #divBookmark > img:nth-child(1)
+	/*.barContent > div:nth-child(1) > div:nth-child(11), .barContent > div:nth-child(1) > .clear, */
+	.barContent > div:nth-child(1) > .clear2, #divBookmark > img:nth-child(1)
 	{
 		display: none !important;
+	}
+	.barContent > div:nth-child(1) > div:nth-child(11)
+	{
+		margin-left: -25px !important;
 	}
 	.specialButton
 	{
