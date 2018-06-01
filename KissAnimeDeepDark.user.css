@@ -2,7 +2,7 @@
 @name KissAnime DeepDark
 @namespace github.com/RaitaroH/KissAnime-DeepDark
 @homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
-@version 2.1.7
+@version 2.1.8
 @updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (KissAnime dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*2.1.7*/
+/*2.1.8*/
 
 	/*Main color variables*/
 	:root
@@ -348,7 +348,7 @@
 
 	/*Hiding crap*/
 	/*Ads*/
-	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose, [id*="BB_S"]
+	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #divFloatRight, #adsIfrme6, div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, #adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose, [id*="BB_S"], div[class^="#ads-"], div[class*=" #ads-"], [class^="#ads-"], [class*=" #ads-"]
 	{
 		display: none !important;
 	}
