@@ -2,7 +2,7 @@
 @name KissAnime DeepDark
 @namespace github.com/RaitaroH/KissAnime-DeepDark
 @homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
-@version 2.1.8
+@version 2.1.9
 @updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (KissAnime dark theme)
 @author RaitaroH
@@ -109,7 +109,7 @@
 	"Jisho_夜明け":  "#EFB26C"
 }
 
-@var select dimerText 'Secondary text color' {
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*2.1.8*/
+/*2.1.9*/
 
 	/*Main color variables*/
 	:root
@@ -148,7 +148,7 @@
 		--second-background: /*[[secondBackground]]*/;
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
-		--dimer-text: /*[[dimerText]]*/;
+		--dimmer-text: /*[[dimmerText]]*/;
 
 		/*DeepDark colors*/
 		/*
@@ -157,7 +157,7 @@
 		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
-		--dimer-text: #CCCCCC;
+		--dimmer-text: #CCCCCC;
 		*/
 
 		/*KDE colors*/
@@ -167,7 +167,7 @@
 		--second-background: #2a2e32;
 		--hover-background: #31363b;
 		--main-text: #eff0f1;
-		--dimer-text: #bdc3c7;
+		--dimmer-text: #bdc3c7;
 		*/
 
 		/*Vertex Dark colors*/
@@ -177,7 +177,7 @@
 		--second-background: #353638;
 		--hover-background: #515254;
 		--main-text: #F3F3F5;
-		--dimer-text: #AEAFB0;
+		--dimmer-text: #AEAFB0;
 		*/
 
 		/*Arc Dark colors*/
@@ -187,7 +187,7 @@
 		--second-background: #383C4A;
 		--hover-background: #414A59;
 		--main-text: #C1C8D1;
-		--dimer-text: #B3BAC5;
+		--dimmer-text: #B3BAC5;
 		*/
 
 		/*Firefox Dark colors*/
@@ -197,7 +197,7 @@
 		--second-background: #181D20;
 		--hover-background: #353A44;
 		--main-text: #E3EEF9;
-		--dimer-text: #989798;
+		--dimmer-text: #989798;
 		*/
 
 		/*Firefox57 Dark colors*/
@@ -207,7 +207,7 @@
 		--second-background: #252526;
 		--hover-background: #323234;
 		--main-text: #F9F9FA;
-		--dimer-text: #D0D0D0;
+		--dimmer-text: #D0D0D0;
 		*/
 
 		/*Discord colors*/
@@ -217,7 +217,7 @@
 		--second-background: #2F3136;
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
-		--dimer-text: #ADA8AA;
+		--dimmer-text: #ADA8AA;
 		*/
 
 		/*YouTube dark colors*/
@@ -227,7 +227,7 @@
 		--second-background: #232323;
 		--hover-background: #343434;
 		--main-text: #E1E1E1;
-		--dimer-text: #7F7F7F;
+		--dimmer-text: #7F7F7F;
 		*/
 
 		/*Mint-Y-Dark colors*/
@@ -237,7 +237,7 @@
 		--second-background: #383838;
 		--hover-background: #404040;
 		--main-text: #FFFFFF;
-		--dimer-text: #D5DADA;
+		--dimmer-text: #D5DADA;
 		*/
 
 		/*9anime colors*/
@@ -247,7 +247,7 @@
 		--second-background: #17151C;
 		--hover-background: #1E1C25;
 		--main-text: #B4B4B4;
-		--dimer-text: #747474;
+		--dimmer-text: #747474;
 		*/
 
 		/*Black and white*/
@@ -257,7 +257,7 @@
 		--second-background: #0a0a0a;
 		--hover-background: #0f0f0f;
 		--main-text: #b4b4b4;
-		--dimer-text: #828282;
+		--dimmer-text: #828282;
 		*/
 
 		/*Yellow (colors from petrocompletions)*/
@@ -267,7 +267,7 @@
 		--second-background: #202222;
 		--hover-background: #353838;
 		--main-text: #EFF0F1;
-		--dimer-text: #9F9999;
+		--dimmer-text: #9F9999;
 		*/
 
 		/*Yellow 2*/
@@ -277,7 +277,7 @@
 		--second-background: #0c0a04;
 		--hover-background: #0f0d05;
 		--main-text: #fffdf5;
-		--dimer-text: #fff8e1;
+		--dimmer-text: #fff8e1;
 		*/
 
 		/*Ubuntu grey colors*/
@@ -287,7 +287,7 @@
 		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Ubuntu purple colors*/
@@ -297,7 +297,7 @@
 		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Orange*/
@@ -307,7 +307,7 @@
 		--second-background: #0e0702;
 		--hover-background: #110903;
 		--main-text: #fff9f5;
-		--dimer-text: #ffede1;
+		--dimmer-text: #ffede1;
 		*/
 
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
@@ -317,7 +317,7 @@
 		--second-background: #2A1B1B;
 		--hover-background: #863B2F;
 		--main-text: #EFB26C;
-		--dimer-text: #986E3F;
+		--dimmer-text: #986E3F;
 		*/
 	}
 
@@ -432,12 +432,12 @@
 	}
 	#formSearch > div:nth-child(4) > a:nth-child(1)
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	input.text, .txtSignUp
 	{
 		margin: 0px !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 		background: var(--second-background) !important;
 		box-shadow: 0px 0px 10px var(--main-background) !important;
 		transition: none !important;
@@ -547,7 +547,7 @@
 	}
 	a:visited
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 		opacity: .8;
 	}
 	a:visited:hover
@@ -571,7 +571,7 @@
 	}
 	.textDark, .barContent .textDark
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.rightBox, .barTitle
 	{
@@ -710,7 +710,18 @@
 		opacity: 1 !important;
 		visibility: visible !important;
 	}
-
+	.specialButton
+	{
+		box-shadow: none;
+	}
+	.specialButton:hover span
+	{
+		color: var(--main-text) !important;
+	}
+	.specialButton:hover
+	{
+		filter: brightness(110%);
+	}
 
 	#footer
 	{
@@ -774,7 +785,7 @@
 	}
 	.listing tr td > a:visited
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.listing tr:hover td > a, .listing tr td > a:visited:hover
 	{
@@ -821,7 +832,7 @@
 	/*User logged in*/
 	#topHolderBox > span:nth-child(2)
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.boxDropDown, #menu_box a, #menu_box
 	{
