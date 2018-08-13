@@ -2,7 +2,7 @@
 @name KissAnime DeepDark
 @namespace github.com/RaitaroH/KissAnime-DeepDark
 @homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
-@version 2.2.0
+@version 2.2.1
 @updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (KissAnime dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*2.2.0*/
+/*2.2.1*/
 
 	/*Main color variables*/
 	:root
@@ -871,5 +871,41 @@
 	div.bigBarContainer:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(7) > div:nth-child(2)
 	{
 		color: var(--main-text) !important;
+	}
+}
+@-moz-document domain('rapidvideo.com'), domain('openload.co') {
+	.vjs-big-play-centered .vjs-play-progress, .video-js .vjs-volume-level
+	{
+		background-color: /*[[mainColor]]*/ !important;
+	}
+	/*openload*/
+	.video-js .vjs-load-progress div
+	{
+		background-color: /*[[dimmerText]]*/ !important;
+	}
+	/*openload*/
+	.vjs-menu-button-popup .vjs-menu-content li:hover
+	{
+		background-color: /*[[mainColor]]*/ !important;
+	}
+	.video-js .vjs-big-play-button:hover .vjs-icon-placeholder, .vjs-button:hover > .vjs-icon-placeholder,
+	.vjs-big-play-centered .vjs-progress-control:hover .vjs-play-progress::before,
+	/*openload*/
+	.video-js .vjs-mute-control:hover, .video-js .vjs-volume-menu-button:hover,
+	.video-js .vjs-play-control:hover, .video-js .vjs-control-bar .vjs-button:hover
+	{
+		color: /*[[mainColor]]*/ !important;
+	}
+	.video-js .vjs-control:focus, .video-js .vjs-control:focus::before, .video-js .vjs-control:hover::before
+	{
+		text-shadow: none !important;
+	}
+	.video-js .vjs-progress-control:hover .vjs-progress-holder, .video-js:hover .vjs-progress-holder
+	{
+    	font-size: 1.4em !important;
+	}
+	img[src="/images/rapidvideo_logo_player.png"]
+	{
+		display: none !important;
 	}
 }
