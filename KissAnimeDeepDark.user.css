@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name KissAnime DeepDark
-@namespace github.com/RaitaroH/KissAnime-DeepDark
-@homepageURL https://github.com/RaitaroH/KissAnime-DeepDark
+@namespace gitlab.com/RaitaroH/KissAnime-DeepDark
+@homepageURL https://gitlab.com/RaitaroH/KissAnime-DeepDark
 @version 2.2.3
-@updateURL https://rawgit.com/RaitaroH/KissAnime-DeepDark/master/KissAnimeDeepDark.user.css
+@updateURL https://gitlab.com/RaitaroH/KissAnime-DeepDark/raw/master/KissAnimeDeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (KissAnime dark theme)
 @author RaitaroH
 @license GNU-V3.0
@@ -145,7 +145,7 @@
 
 @-moz-document domain("kissanime.ru"), domain("kissmanga.com") {
 
-/*Theme made by RaitaroH @https://github.com/RaitaroH/KissAnime-DeepDark*/
+/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/KissAnime-DeepDark*/
 
 /*GNU General Public License v3.0*/
 
@@ -387,7 +387,7 @@
 	}
 	#head h1
 	{
-		background: url("https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/master/Images/logo.png") !important;
+		background: url("https://raw.githubusercontent.com/RaitaroH/KissAnime-DeepDark/raw/master/Images/logo.png") !important;
 		width: 80% !important;
 		margin: -100px 10px 0px 0px !important;
 	}
