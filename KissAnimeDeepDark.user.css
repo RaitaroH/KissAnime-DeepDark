@@ -29,7 +29,7 @@
 	"Jisho_夜明け": "#EF7D6C",
 	"Custom": "/*[[custom-main-color]]*\/"
 }
-@var color custom-main-color "Custom main color" #00adee"
+@var color custom-main-color "Custom main color" "#00adee"
 
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
@@ -358,13 +358,13 @@
 
 	/*Hiding crap*/
 	/*Ads*/
-	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #divFloatRight, #adsIfrme6, 
-	div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6, 
-	#adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose, [id*="BB_S"], div[class^="#ads-"], 
+	#divFloatLeft, #tab-trending > div:nth-child(1), #divAds2, #divAds1, #divAds, #divFloatRight, #adsIfrme6,
+	div.divCloseBut, #adsIfrme0, #adsIfrme1, #adsIfrme2, #adsIfrme3, #adsIfrme4, #adsIfrme5, #adsIfrme6,
+	#adsIfrme7, #adsIfrme8, #adsIfrme10, #videoAd, .videoAdClose, [id*="BB_S"], div[class^="#ads-"],
 	div[class*=" #ads-"], [class^="#ads-"], [class*=" #ads-"],
 	/*New ads, july 2018*/
 	a[href*="bebi"],
-	[style*="visibility:visible;height:768px;width:336px;position:absolute;"], 
+	[style*="visibility:visible;height:768px;width:336px;position:absolute;"],
 	[style*="width: 100%; height: 768px; position: fixed;"],
 	[style*="width:100%;height:768px;position:fixed;left:0"],
 	img[style*="width:336px!important;height:768px!important;"]
