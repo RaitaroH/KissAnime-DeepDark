@@ -563,12 +563,12 @@
 	{
 		color: var(--main-text) !important;
 	}
-	a:visited
+	a:visited, .listing tr td > a.episodeVisited
 	{
 		color: var(--dimmer-text) !important;
 		opacity: .8;
 	}
-	a:visited:hover
+	a:visited:hover, .listing tr td > a.episodeVisited:hover
 	{
 		color: var(--main-color) !important;
 		opacity: 1 !important;
